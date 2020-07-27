@@ -2,7 +2,7 @@
 ## Overview
 The purpose of this analysis is to produce a comprehensive examination of stock data to find the total daily volume and yearly return for each stock. Since this analysis was initially done with a smaller subset, the analysis below is an expansion of the dataset to include the entire stock market over the past couple years. This analysis was executed by refactoring from the inital examination of the subset data, and to determine the efficiency of refactoring VBA code and measuring performance by script run time. 
 
---
+---
 ## Results 
 Refactoring of code was executed as below. 
 
@@ -56,5 +56,19 @@ startingPrice = Cells(j, 6).Value
        Cells(4 + i, 1).Value = ticker(i)
        Cells(4 + i, 2).Value = tickerVolume(i)
        Cells(4 + i, 3).Value = tickerendingPrices(i) / tickerstartingPrices(i) - 1`
+---
+##Conclusion
+ Although refactoring was done per above with original code, comprehensive analysis of the dataset for year 2017 and 2018 could not be obtained due to further debugging required in the code. 
+ ---
+##Summary
+###Advantages and disadvantages of refactoring code.
 
-               
+Refactoring code is advantegous for reusing existing code and applying it to larger datasets. This can allow scripts to be multipurpose and cross-functional across different project. This can also be time-efficent rather than starting a new script for every new scenario or question being asked. A disadvantage is the risk of missing variables to change or correct for when recfactoring a new code for a new dataset, which may lead to more debugging required. Likewise without careful documentation on github refactoring can lead to overwriting valuable code. 
+
+---
+###Advantages and disadvantages of the original and refactored VBA script 
+
+Advantages of the original VBA script is that a smaller dataset allowed us to manipulate and format the data more easily. With only a small number of datapoints, buttons/color-coding can be adding to easier user access. A disadvantage to the original VBA script is that it was not comprehensive in informing us about the stock data across years 2017,2018. 
+
+-
+Advantage of the refactored VBA script is that it does give us a thorough look at sotkc data across multiple years and data points. A disadvantage is that the processing time can be assumed to be slower in VBA given the larger about of data to manipulate. 
