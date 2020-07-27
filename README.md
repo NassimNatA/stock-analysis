@@ -56,6 +56,7 @@ startingPrice = Cells(j, 6).Value
        Cells(4 + i, 1).Value = ticker(i)
        Cells(4 + i, 2).Value = tickerVolume(i)
        Cells(4 + i, 3).Value = tickerendingPrices(i) / tickerstartingPrices(i) - 1`
+       
 ---
 ## Conclusion
 
@@ -73,4 +74,4 @@ Refactoring code is advantegous for reusing existing code and applying it to lar
 Advantages of the original VBA script is that a smaller dataset allowed us to manipulate and format the data more easily. With only a small number of datapoints, buttons/color-coding can be adding to easier user access. A disadvantage to the original VBA script is that it was not comprehensive in informing us about the stock data across years 2017,2018. 
 
 -
-Advantage of the refactored VBA script is that it does give us a thorough look at sotkc data across multiple years and data points. A disadvantage is that the processing time can be assumed to be slower in VBA given the larger about of data to manipulate. 
+Advantage of the refactored VBA script is that it gives a thorough look at stock data across multiple years and data points. A disadvantage is that the processing time can be assumed to be slower in VBA given the larger about of data to manipulate. 
