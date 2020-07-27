@@ -7,12 +7,14 @@ The purpose of this analysis is to produce a comprehensive examination of stock 
 Refactoring of code was executed as below. 
 *Step 1a/1b: Create a tickerIndex variable and set it equal to zero before iterating over all the rows.* 
 *Create three output arrays: tickerVolumes, tickerStartingPrices, and tickerEndingPrices.*
+
 `Dim tickerVolumes(12) As Long
--
+
+
     Dim tickerstartingPrices(12) As Single
-    -
+    
     Dim tickerendingPrices(12) As Single 
-    -
+    
     tickerIndex = 0`
 
 *Step 2a: Create a for loop to initialize the tickerVolumes to zero.*
